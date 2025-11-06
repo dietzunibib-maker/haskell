@@ -19,7 +19,7 @@ toFahrenheit a = (9 / 5) * a + 32
 -- Input Float
 -- Output Float
 -- Die Funktion toCelsius nimmt eine Float-Zahl (Fahrenheit) als Eingabe und gibt eine Float-Zahl (Celsius) zurück.
--- Converting Fahrenheit to Celsius
+-- °C = (′F - 32) * 5/9
 
 toCelsius :: Float -> Float
 toCelsius b = (b - 32) * (5 / 9)
