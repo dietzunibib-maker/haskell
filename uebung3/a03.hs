@@ -1,3 +1,4 @@
+import qualified Distribution.SPDX as 32
 -- Aufgabe 3a)
 
 -- Funktionsname: toFahrenheit
@@ -18,24 +19,34 @@ toFahrenheit a = (9 / 5) * a + 32
 -- Umrechnung von °Fahrenheit nach °Celsius
 -- Input Float
 -- Output Float
-
--- Funktionskopf: Die Funktion toCelsius nimmt eine Float-Zahl (Fahrenheit) als Eingabe und gibt eine Float-Zahl (Celsius) zurück.
+-- Die Funktion toCelsius nimmt eine Float-Zahl (Fahrenheit) als Eingabe und gibt eine Float-Zahl (Celsius) zurück.
 -- Converting Fahrenheit to Celsius
 
 toCelsius :: Float -> Float
--- Beispiele: 0, 42, 100
 toCelsius b = (b - 32) * (5 / 9)
 
 main :: IO ()
 main = do 
     putStrLn "Celsius to Fahrenheit 0 -> 32.0"
-    let temperatureFahrenheit = toFahrenheit 0 
+    let temperatureFahrenheit = toFahrenheit 0    
     print temperatureFahrenheit
 
-    putStrLn "Celsius to Fahrenheit 42 -> 107.6"
-    let temperatureFahrenheit = toFahrenheit 42 
-    print temperatureFahrenheit
+    -- putStrLn "Celsius to Fahrenheit 42 -> 107.6"
+    -- let temperatureFahrenheit = toFahrenheit 42 
+    -- print temperatureFahrenheit
 
-    putStrLn "Celsius to Fahrenheit 100 -> 32.0 ?"
-    let temperatureFahrenheit = toFahrenheit 0 
-    print temperatureFahrenheit
+    -- putStrLn "Celsius to Fahrenheit 100 -> 32.0 ?"
+    -- let temperatureFahrenheit = toFahrenheit 0 
+    -- print temperatureFahrenheit
+
+    putStrLn "Fahrenheit to Celsius 32 -> 0"
+    let temperatureCelsius = toCelsius 32.0 
+    print temperatureCelsius 
+
+    -- putStrLn "Fahrenheit to Celsius 107.6 -> 42"
+    -- let temperatureCelsius = toCelsius 107.6 
+    -- print temperatureCelsius 
+
+    -- putStrLn "Fahrenheit to Celsius 100 -> 32"
+    -- let temperatureCelsius = toCelsius 100.0 
+    -- print temperatureCelsius 
