@@ -1,4 +1,3 @@
-import qualified Distribution.SPDX as 32
 -- Aufgabe 3a)
 
 -- Funktionsname: toFahrenheit
