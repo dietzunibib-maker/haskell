@@ -1,31 +1,21 @@
 -- Aufgabe 4a)
 
--- Die Funktion zerfällt in drei Unterfunktionen:
--- Preis Kaffes
--- Preis Tees
--- Addiere Preis Kaffes und Preis Tees um Gesamtpreis zu erhalten
-
--- Funktionskopf priceCoffees
 -- Funktionsname: priceCoffees
 -- Die Funktion berechnet den Preis für die Gesamtanzahl aller gekauften Kaffees
 -- Dazu wird der Preis für einen Kaffee mit der Anzahl der gekauften Kaffees multipliziert
 -- Eingabe: Anzahl (Integer)
 -- Ausgabe: Preis in Euro (Integer)
--- Signatur: priceCoffees :: Integer -> 
+-- Signatur: priceCoffees :: Integer -> Integer
 -- Beispiel
 -- Anzahl Kaffees: 2, Preis pro Kaffee: 3€, 2*3 = 6, priceCoffee == 6
 
--- Funktionskopf priceTeas
 -- Funktionsname priceTeas
 -- Die Funktion berechnet den Preis für die Gesamtanzahl aller gekauften Tees
 -- Dazu wird der Preis für einen Tee mit der Anzahl der gekauften Tees multipliziert
 -- Eingabe: Anzahl (Integer)
 -- Ausgabe: Preis in Euro (Integer)
 -- Signatur: priceTea :: Integer -> Integer
--- Beispiel:
--- Anzahl Tees: 3, Preis pro Tee: 2€, 3*2 = 6, priceTea = 6
 
--- Funktionskopf totalPrice
 -- Funktionsname: totalPrice
 -- Eingabe: numberCoffees, numberTeas (Integer, Integer)
 -- Ausgabe: Gesamtpreis in Euro (Integer)
@@ -35,7 +25,6 @@
 
 -- Aufgabe 4b
 
--- Funktionskopf totalPriceTip
 -- Funktionsname: totalPriceTip
 -- Eingabe: totalPrice x y (Integer, Integer)
 -- Ausgabe: Preis inklusive 10% Trinkgeld (Double)
